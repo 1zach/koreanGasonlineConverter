@@ -46,26 +46,17 @@ main {
 label {
     padding: 10px 0px;
     font-weight: 300;
+    font-size: 1rem;
+    font-weight: bold;
     
 }
 
 input {
   font-size: 20px;
   
-  padding-bottom: 5px;
-  background-image: linear-gradient(
-    75deg,
-    rgb(4, 6, 10) 0%,
-    rgb(20, 57, 102) 11%,
-    rgb(34, 70, 97) 22%,
-    rgb(45, 94, 124) 33%,
-    rgb(16, 59, 82) 44%,
-    rgb(28, 70, 88) 56%,
-    rgb(22, 71, 87) 67%,
-    rgb(11, 40, 48) 78%,
-    rgb(20, 57, 65) 89%,
-    rgb(1, 16, 19) 100%
-  );
+  padding: 5px 0px;
+  
+  background-image: white;
   border: none;
   color: white;
   -moz-appearance: textfield;
@@ -73,9 +64,16 @@ text-align: center;
   border-radius: 3px;
   width: 50%;
   margin: auto;
+  opacity: 75%;
+  
 }
 
+input::placeholder {
+    color: rgb(52, 52, 92);
+    font-weight: 300;
+    font-size: 1rem;
 
+}
 
 button {
   width: 10rem;
@@ -86,7 +84,7 @@ button {
   display: flex;
   justify-content: center;
   align-self: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   font-weight: 600;
   font-size: 1.5rem;
   margin-top: .5rem;
@@ -116,7 +114,7 @@ input::-webkit-inner-spin-button {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 30px;
+  padding: 50px;
 }
 .light-grey-text {
   color: #d2d2d2;
