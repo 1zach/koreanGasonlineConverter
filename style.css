@@ -58,7 +58,7 @@ input {
   
   background-image: white;
   border: none;
-  color: white;
+  color: rgb(56, 56, 88);
   -moz-appearance: textfield;
 text-align: center;
   border-radius: 3px;
