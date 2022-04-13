@@ -1,0 +1,127 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 25px 25px;
+  background: #1c1c1c;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 550px;
+  box-shadow: 3px 3px 30px 1px rgba(255, 255, 255, 0.25);
+  border-radius: 5%;
+  overflow: hidden;
+
+}
+
+.header {
+  background-color: #1f2937;
+  color: white;
+  height: 280px;
+  font-weight: 800;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.title {
+  font-size: 20px;
+  padding-top: 75px;
+}
+
+label {
+    padding: 10px 0px;
+    font-weight: 300;
+    
+}
+
+input {
+  font-size: 20px;
+  
+  padding-bottom: 5px;
+  background-image: linear-gradient(
+    75deg,
+    rgb(4, 6, 10) 0%,
+    rgb(20, 57, 102) 11%,
+    rgb(34, 70, 97) 22%,
+    rgb(45, 94, 124) 33%,
+    rgb(16, 59, 82) 44%,
+    rgb(28, 70, 88) 56%,
+    rgb(22, 71, 87) 67%,
+    rgb(11, 40, 48) 78%,
+    rgb(20, 57, 65) 89%,
+    rgb(1, 16, 19) 100%
+  );
+  border: none;
+  color: white;
+  -moz-appearance: textfield;
+text-align: center;
+  border-radius: 3px;
+  width: 50%;
+  margin: auto;
+}
+
+
+
+button {
+  width: 10rem;
+  border-radius: 10px;
+  border: 2px solid #d2d2d2;
+  color: white;
+  background-color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: .5rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #2d3b4e
+}
+
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.conversions {
+  color: #fff;
+  text-align: center;
+  background-color: red;
+  background: #1f2937;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+.light-grey-text {
+  color: #d2d2d2;
+}
+
+h3 {
+  font-weight: 600;
+}

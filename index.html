@@ -1,0 +1,75 @@
+<head>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Unit converter</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="header">
+          <h1 class="title">Gas is Expensive in Korea</h1>
+          <h2 class="title-secondary">How much are you paying?</h2>
+          <div><label>How many Won per liter?</label></div>
+          <input
+            type="number"
+            name="value-input"
+            id="value-input"
+            placeholder = "How many won per liter?"
+            >
+            <div><label>How many liters in your car?</label></div>
+           <input type="number" name="liters-input" id="liters-input"
+           placeholder="How many Liters?">
+          </input>
+          <div><label>How many KM's do you get per tank?</label></div>
+          <input type="number" name="kmPerTank" id="kmPerTank" placeholder="How many KM per tank?">
+        </input>
+          <button onclick="returnText()">Submit</button>
+        </div>
+
+        <div class="conversions">
+          <div class="length-el">
+            <h3>1 liter costs</h3>
+            <p id="length-text" class="light-grey-text">
+              <span id = "userInput0">0</span> won/liter =  <span id ="wTD">0</span> dollars/liter 
+              
+            </p>
+          </div>
+          <div class="volume-el">
+            <h3>Liters to Gallons</h3>
+            <p id="volume-text" class="light-grey-text">
+              <span id = "userInput2">0</span> liters = <span id ="lTG">0</span> gallons
+              
+            </p>
+          </div>
+          <div class="mass-el">
+            <h3>1 gallon of gas costs:</h3>
+            <p id="mass-text" class="light-grey-text">
+              You're paying <span id="gallonOfGasCosts">0</span> per gallon and <span id="costPerTank">0</span> per tank
+              
+            </p>
+          </div>
+          <div class="mass-el">
+            <h3>Dollar per mile</h3>
+            <p id="mass-text" class="light-grey-text">
+              You're paying <span id="dollarPerMile">0</span> cents per mile 
+              
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </main>
+<!-- HTML AND CSS FROM FIGMA
+          PROJECT FROM SCRIMBA.COM 
+          ADAPTED BY ME TO TAKE INPUT FROM USER-->
+    <script src="index.js"></script>
+  </body>
